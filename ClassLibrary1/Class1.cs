@@ -1,7 +1,9 @@
-﻿namespace ClassLibrary1
+﻿namespace Model
 {
-    public class Class1
+    public enum ErrorCode
     {
-
+     None = 0,
+     Unknown = -1,
+     ConnectionLost = 200
     }
 }
