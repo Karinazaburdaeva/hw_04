@@ -38,6 +38,11 @@
                 Console.WriteLine("Flag not presented = {0}", currentDay);
             }
 
+            /*
+            * ConsoleKeyInfo key = Console.ReadKey();
+            if (key.Key == ConsoleKey.Escape)
+            */
+
         }
     }
 }
