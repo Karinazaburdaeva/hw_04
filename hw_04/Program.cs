@@ -21,6 +21,23 @@
             Console.WriteLine("nineEnum variable = {0}", nineEnum);
 
 
+            Console.WriteLine("Weekend = {0}", (Model.Days)96);
+
+            Console.ForegroundColor = (ConsoleColor.DarkBlue);
+
+            var courceDays = Model.Days.Monday | Model.Days.Thursday;
+
+            Model.Days currentDay = Model.Days.Friday;
+
+            if (courceDays.HasFlag(currentDay))
+            {
+                Console.WriteLine("Flag presented = {0}", currentDay);
+            }
+            else
+            {
+                Console.WriteLine("Flag not presented = {0}", currentDay);
+            }
+
         }
     }
 }
